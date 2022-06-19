@@ -1,5 +1,5 @@
 # QTNotepad
-Development of a text editor using Qt.
+Development of a text editor using Qt.     
 
 Supports the ability to open multiple files by using the tab widget (QTabWidget)
 Analyzes file extensions when opened.
