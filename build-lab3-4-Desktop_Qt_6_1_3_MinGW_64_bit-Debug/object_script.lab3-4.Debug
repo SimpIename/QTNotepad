@@ -1,0 +1,10 @@
+debug/codeedit.o
+debug/codehighlighter.o
+debug/main.o
+debug/notepad.o
+debug/onexit.o
+debug/qrc_resource.o
+debug/moc_codeedit.o
+debug/moc_codehighlighter.o
+debug/moc_notepad.o
+debug/moc_onexit.o

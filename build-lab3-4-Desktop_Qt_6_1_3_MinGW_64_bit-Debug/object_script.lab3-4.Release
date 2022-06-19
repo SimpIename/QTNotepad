@@ -1,0 +1,10 @@
+release/codeedit.o
+release/codehighlighter.o
+release/main.o
+release/notepad.o
+release/onexit.o
+release/qrc_resource.o
+release/moc_codeedit.o
+release/moc_codehighlighter.o
+release/moc_notepad.o
+release/moc_onexit.o

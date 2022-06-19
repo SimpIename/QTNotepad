@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">Notepad{
+background-color:#B0C4DE ;
+}
+
+QMenuBar {
+background-color: #4169E1;
+}
+
+QMenuBar::item{
+background:#191970;
+}
+
+QMenuBar::item:selected {
+background: #191970;
+}
+
+QMenu {
+background-color: #191970;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="mainWidget">
+      <property name="styleSheet">
+       <string notr="true">QTabWidget::pane{
+border: 1px;
+background-color:#FFFFFF;
+}
+
+QTabBar::tab {
+background-color: rgb(255,255,255);
+min-width: 20ex;
+min-height: 6ex;
+margin-left: 1px;
+left: -1px
+}
+
+QTabBar::tab:selected {
+background-color: rgb(255,255,255);
+}
+
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1069</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newFileAction"/>
+    <addaction name="openFileAction"/>
+    <addaction name="saveFileAction"/>
+    <addaction name="saveFileAsAction"/>
+    <addaction name="saveAllAction"/>
+    <addaction name="closeFileAction"/>
+    <addaction name="closeAllAction"/>
+    <addaction name="exitAction"/>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="cutAction"/>
+    <addaction name="copyAction"/>
+    <addaction name="pasteAction"/>
+    <addaction name="deleteAction"/>
+    <addaction name="selectAllAction"/>
+   </widget>
+   <widget class="QMenu" name="viewMenu">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="showFileExplorer"/>
+    <addaction name="showOpenDocs"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="editMenu"/>
+   <addaction name="viewMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newFileAction">
+   <property name="text">
+    <string>Новый</string>
+   </property>
+  </action>
+  <action name="openFileAction">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+  </action>
+  <action name="saveFileAction">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="saveFileAsAction">
+   <property name="text">
+    <string>Сохранить как...</string>
+   </property>
+  </action>
+  <action name="saveAllAction">
+   <property name="text">
+    <string>Сохранить всё</string>
+   </property>
+  </action>
+  <action name="closeFileAction">
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+  </action>
+  <action name="closeAllAction">
+   <property name="text">
+    <string>Закрыть всё</string>
+   </property>
+  </action>
+  <action name="exitAction">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="cutAction">
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+  </action>
+  <action name="copyAction">
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+  </action>
+  <action name="pasteAction">
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+  </action>
+  <action name="deleteAction">
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="selectAllAction">
+   <property name="text">
+    <string>Выделить всё</string>
+   </property>
+  </action>
+  <action name="showFileExplorer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать проводник</string>
+   </property>
+  </action>
+  <action name="showOpenDocs">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать обозреватель открытых документов </string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
